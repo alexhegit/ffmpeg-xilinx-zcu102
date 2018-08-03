@@ -27,22 +27,32 @@ Please refer to [UG1144 - PetaLinux Tools Documentation: Reference Guide (ver201
 6. Boot zcu102 with sd boot mode. Login as "root" with passwd "root"
 The X11 GUI will show in the monitor. 
 7. Mount SD partion 1 as need
+
   $mount /dev/mmcblk0p1 /mnt
+  
   $cd /mnt
+  
 8. Set DISPLAY device of X11
+  
   $export DISPLAY=:0.0
+  
 9. Play the video files.
+  
   e.g.
+  
   $ffplay -loop 0 -threads 2 hd0047_1080p@30fps_vb1M.ts
   
 10. Play live video from USB camera
+  
   e.g.
+  
   $ffplay -f video4linux2 -framerate 30 -video_size hd720 /dev/video0
 
 
 
 You can use ffmpeg to create the test video file with different format.
-e.g. force covert source video file to 1080p@30fps baseline level, cbr v10Mbit/s.
+e.g. 
+force covert source video file to 1080p@30fps baseline level, cbr v10Mbit/s.
 
 $ffmpeg -i hd0047_1080p@30fps.mov -c:v libx264 -profile:v baseline -level 4 -an -y -x264-params "nal-hrd=cbr" -b:v 10M -minrate 10M -maxrate 10M  hd0047_1080p@30fps_vb10M.ts
 
