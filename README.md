@@ -34,6 +34,11 @@ The X11 GUI will show in the monitor.
 9. Play the video files.
   e.g.
   $ffplay -loop 0 -threads 2 hd0047_1080p@30fps_vb1M.ts
+  
+10. Play live video from USB camera
+  e.g.
+  $ffplay -f video4linux2 -framerate 30 -video_size hd720 /dev/video0
+
 
 
 You can use ffmpeg to create the test video file with different format.
