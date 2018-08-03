@@ -13,6 +13,7 @@ Please refer to [UG1144 - PetaLinux Tools Documentation: Reference Guide (ver201
    Chose the package groups by "petalinux-config -c rootfs" 
    - chose the multimedia package group
    - chose the opencv package group
+   - chose x264 (H.264 software en/decoder)
    - chose any other package as you need
 3. Enlarge the MAX size(>250MB or more) of initramfs.(page51 Managing Image Size ).
 4. Build and create the images files.
