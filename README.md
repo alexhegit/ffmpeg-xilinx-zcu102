@@ -44,6 +44,17 @@ $ffmpeg -i hd0047_1080p@30fps.mov -c:v libx264 -profile:v baseline -level 4 -an 
 
 ## Test Report
 
+Test files is 1080p@30fps, x264 Basline/level 4 in different bitrate, no audio. DP is output port  
+
+Input | Bitrate| CPU loading(%)
+==============================
+hd0047_1080p@30fps_vb1M.ts | 1119 | 35~47
+hd0047_1080p@30fps_vb3M.ts | 3272 | 40~55
+hd0047_1080p@30fps_vb5M.ts | 5434 | 40~60
+hd0047_1080p@30fps_vb8M.ts | 8689 | 40~67
+hd0047_1080p@30fps_vb10M.ts | 10862 | 45~70
+
+
 Input                      |Output|Resolution@fps	| X264 profile/level | Bitrate(kb/s)	| Audio	| CPU loading(%)
 --------------------------------------------------------------------------------------------------------------------
 hd0047_1080p@30fps_vb1M.ts | DP   | 1080p@30fps	        | Baseline/level 4   | 1119	         | No   | 35~47	
