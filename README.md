@@ -44,13 +44,13 @@ $ffmpeg -i hd0047_1080p@30fps.mov -c:v libx264 -profile:v baseline -level 4 -an 
 
 ## Test Report
 
-Input                      |	Output | Resolution@fps	| X264 profile/level | Bitrate(kb/s)	| Audio	| CPU loading(%)
+Input                      |Output|Resolution@fps	| X264 profile/level | Bitrate(kb/s)	| Audio	| CPU loading(%)
 --------------------------------------------------------------------------------------------------------------------
-hd0047_1080p@30fps_vb1M.ts | DP      | 1080p@30fps	  | Baseline/level 4	 | 1119	          | No    | 35~47	
-hd0047_1080p@30fps_vb3M.ts | DP      | 1080p@30fps	  | Baseline/level 4   | 3272	          | No    | 40~55	
-hd0047_1080p@30fps_vb5M.ts | DP      | 1080p@30fps  	| Baseline/level 4	 | 5434	          | No    | 40~60	
-hd0047_1080p@30fps_vb8M.ts | DP      | 1080p@30fps  	| Baseline/level 4	 | 8689	          | No    | 40~67	
-hd0047_1080p@30fps_vb10M.ts| DP      | 1080p@30fps  	| Baseline/level 4	 | 10862	        | No    | 45~70	
+hd0047_1080p@30fps_vb1M.ts | DP   | 1080p@30fps	        | Baseline/level 4   | 1119	         | No   | 35~47	
+hd0047_1080p@30fps_vb3M.ts | DP   | 1080p@30fps	        | Baseline/level 4   | 3272	         | No   | 40~55	
+hd0047_1080p@30fps_vb5M.ts | DP   | 1080p@30fps  	| Baseline/level 4   | 5434	         | No   | 40~60	
+hd0047_1080p@30fps_vb8M.ts | DP   | 1080p@30fps  	| Baseline/level 4   | 8689	         | No   | 40~67	
+hd0047_1080p@30fps_vb10M.ts| DP   | 1080p@30fps  	| Baseline/level 4   | 10862	         | No   | 45~70	
 							
 
 
